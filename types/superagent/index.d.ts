@@ -31,7 +31,7 @@ type NodeParser = (res: request.Response, callback: (err: Error | null, body: an
 
 type Parser = BrowserParser | NodeParser;
 
-type MultipartValueSingle = Blob | Buffer | fs.ReadStream | string | boolean | number;
+type MultipartValueSingle = Buffer | fs.ReadStream | string | boolean | number;
 
 type MultipartValue = MultipartValueSingle | MultipartValueSingle[];
 
